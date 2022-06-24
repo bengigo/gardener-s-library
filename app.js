@@ -18,6 +18,7 @@
 // with an event
 // when the delete button is clicked
 //get the stored data from local storage to gardenBooks array
+
 //remove the selected book. to do so, use filter() method instead of removeChild() method, because filter() was recommended
 // like so >>> array = array.filter((item) => item.id !== event.targer.id);
 // update storage
@@ -60,6 +61,16 @@ class Book {
     }
 
     static delete() {
+        const deleteButton = document.querySelectorAll('.delete');
+        deleteButton.forEach((button) => {
+            button.addEventListener('click', (e) => {
+                let gardenBooks = [];
+                gardenBooks = JSON.parse(localStorage.getItem('gardenBooks'));
+                gardenBooks = gardenBooks.filter((book) => book.id !== e.target.id);
+                localStorage.setItem("gardenBooks", JSON.stringify(gardenBooks));
+                window.location.reload();
+            })
+        })
     }
 
     static store() {
