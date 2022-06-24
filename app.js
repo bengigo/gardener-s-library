@@ -41,7 +41,7 @@ class Book {
     let gardenBooks = [];
     const title = document.querySelector('#title-input').value;
     const author = document.querySelector('#author-input').value;
-    if (title != '' && author != '') {
+    if (title !== '' && author !== '') {
       const book = new Book(title, author);
       gardenBooks.push(book);
       gardenBooks = gardenBooks.concat(JSON.parse(localStorage.getItem('gardenBooks') || '[]'));
@@ -57,7 +57,7 @@ const author = document.querySelector('#author-input');
 addButton.addEventListener('click', (e) => {
   console.log('hey');
   e.preventDefault();
-  if (title.value == '' || author.value == '') {
+  if (title.value === '' || author.value === '') {
     e.preventDefault();
     const errorMessage = document.querySelector('#alert');
     errorMessage.textContent = 'Please fill every filed.';
