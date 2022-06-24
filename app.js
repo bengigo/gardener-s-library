@@ -47,13 +47,20 @@ class Book {
 
   static add() {
     const addButton = document.querySelector('#add-button');
-    addButton.addEventListener('click', () => {
+    addButton.addEventListener('click', (e) => {
       const title = document.querySelector('#title-input').value;
       const author = document.querySelector('#author-name').value;
-      const book = new Book(title, author);
-      const gardenBooks = [];
-      gardenBooks.push(book);
-      Book.store();
+      if (title !== '' && author !== '') {
+        e.preventDefault();
+        const book = new Book(title, author);
+        const gardenBooks = [];
+        gardenBooks.push(book);
+        Book.store();  
+      } else {
+        e.preventDefault();
+        const errorMessage = document.querySelector('#alert');
+        errorMessage.textContent = 'Please fill every filed.'
+      }
     });
   }
 
