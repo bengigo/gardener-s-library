@@ -1,5 +1,5 @@
 const addMessage = document.querySelector('#add-msg');
-addMessage.style.visibility = 'hidden';
+addMessage.style.display = 'none';
 
 class Book {
   constructor(title, author) {
@@ -65,10 +65,8 @@ addButton.addEventListener('click', (e) => {
     Book.store();
     title.value = '';
     author.value = '';
-    window.location.reload();
   }
-  // check if the line below is working
-  addMessage.style.visibility = 'visible';
+  addMessage.style.display = 'flex';
 });
 
 const linkToList = document.querySelector('#list-link');
