@@ -135,6 +135,14 @@ input {
 
 }
 
+#contact {
+  flex-direction: column;
+  align-items: center;
+  height: 50vh;
+  margin: 150px 8px 62px 8px;
+}
+
+
 footer {
   border: 3px solid #395d44;
   padding: 15px 5px 15px 20px;
