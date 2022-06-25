@@ -8,7 +8,7 @@ class Book {
   static display() {
     const bookList = document.querySelector('#book-list');
     let gardenBooks = [];
-    gardenBooks = gardenBooks.concat(JSON.parse(localStorage.getItem('gardenBooks') || '[]'));
+    gardenBooks = gardenBooks.concat(JSON.parse(localStorage.getItem('gardenBooks')));
     gardenBooks.forEach((book) => {
       bookList.innerHTML += `
             <div class="book">
@@ -26,7 +26,7 @@ class Book {
     if (title !== '' && author !== '') {
       const book = new Book(title, author);
       gardenBooks.push(book);
-      gardenBooks = gardenBooks.concat(JSON.parse(localStorage.getItem('gardenBooks') || '[]'));
+      gardenBooks = gardenBooks.concat(JSON.parse(localStorage.getItem('gardenBooks')));
       localStorage.setItem('gardenBooks', JSON.stringify(gardenBooks));
     }
   }
@@ -65,3 +65,10 @@ addButton.addEventListener('click', (e) => {
     window.location.reload();
   }
 });
+
+const timeDisplay = document.querySelector('#time-slot');
+ function displayTime() {
+  timeDisplay.textContent = new Date();
+}
+
+setInterval(displayTime, 1000);
