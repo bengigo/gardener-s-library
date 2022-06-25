@@ -70,6 +70,7 @@ nav {
   margin: 80px 8px 62px 8px;
   height: 60vh;
   overflow: scroll;
+  flex-direction: column;
 }
 
 h1 {

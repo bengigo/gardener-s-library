@@ -1,3 +1,6 @@
+const addMessage = document.querySelector('#add-msg');
+addMessage.style.visibility = 'hidden';
+
 class Book {
   constructor(title, author) {
     this.title = title;
@@ -64,6 +67,44 @@ addButton.addEventListener('click', (e) => {
     author.value = '';
     window.location.reload();
   }
+  // check if the line below is working
+  addMessage.style.visibility = 'visible';
+});
+
+const linkToList = document.querySelector('#list-link');
+const linkToAdd = document.querySelector('#add-link');
+const linkToContact = document.querySelector('#contact-link');
+
+linkToList.addEventListener('click', () => {
+  const listPage = document.querySelector('#book-list');
+  const addPage = document.querySelector('#book-adding');
+  const contactPage = document.querySelector('#contact');
+
+  listPage.style.display = 'flex';
+  addPage.style.display = 'none';
+  contactPage.style.display = 'none';
+});
+
+linkToAdd.addEventListener('click', (e) => {
+  const listPage = document.querySelector('#book-list');
+  const addPage = document.querySelector('#book-adding');
+  const contactPage = document.querySelector('#contact');
+
+  e.preventDefault();
+
+  listPage.style.display = 'none';
+  addPage.style.display = 'flex';
+  contactPage.style.display = 'none';
+});
+
+linkToContact.addEventListener('click', () => {
+  const listPage = document.querySelector('#book-list');
+  const addPage = document.querySelector('#book-adding');
+  const contactPage = document.querySelector('#contact');
+
+  listPage.style.display = 'none';
+  addPage.style.display = 'none';
+  contactPage.style.display = 'flex';
 });
 
 const timeDisplay = document.querySelector('#time-slot');
@@ -72,7 +113,3 @@ function displayTime() {
 }
 
 setInterval(displayTime, 1000);
-
-const linkToList = document.querySelector('#list-link');
-const linkToAdd = document.querySelector('#add-link');
-const linkToContact = document.querySelector('#contact-link');
