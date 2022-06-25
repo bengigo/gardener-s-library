@@ -12,7 +12,7 @@
 }
 
 header {
-    border: 3px solid black;
+    border: 3px solid #395d44;
     padding: 15px 5px 15px 20px;
     margin: 8px;
 }
@@ -30,7 +30,7 @@ nav {
 }
 
 .bordered {
-    border-right: 2px solid black;
+    border-right: 2px solid #395d44;
 
 }
 
@@ -44,7 +44,7 @@ nav {
 }
 
 #book-list {
-    margin: 80px 8px;
+    margin: 80px 8px 62px 8px;
     height: 60vh;
     overflow: scroll;
 }
@@ -64,12 +64,20 @@ h1 {
     padding: 5px 10px;
     height: 32px;
     background-color: #fff;
-    border: 2px solid black;
+    border: 2px solid #395d44;
     -webkit-box-shadow: 3px 7px 14px -1px rgba(0,0,0,0.75);
     -moz-box-shadow: 3px 7px 14px -1px rgba(0,0,0,0.75);
     box-shadow: 3px 7px 14px -1px rgba(0,0,0,0.75);
 }
 
 .book:nth-child(odd) {
-    background-color: rgb(221, 217, 217);
+    /* background-color: rgb(221, 217, 217); */
+    background-color: #9FE2BF;
+}
+
+footer {
+    border: 3px solid #395d44;
+    padding: 15px 5px 15px 20px;
+    margin: 8px;
+
 }
