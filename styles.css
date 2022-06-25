@@ -1,4 +1,6 @@
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -31,6 +33,7 @@ nav {
     border-right: 2px solid black;
 
 }
+
 .nav-item {
     padding: 0 5px;
 }
@@ -38,4 +41,35 @@ nav {
 #time-slot {
     float: right;
     margin-right: 8px;
+}
+
+#book-list {
+    margin: 80px 8px;
+    height: 60vh;
+    overflow: scroll;
+}
+
+h1 {
+    text-align: center;
+}
+
+.book {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0;
+}
+
+.delete {
+    padding: 5px 10px;
+    height: 32px;
+    background-color: #fff;
+    border: 2px solid black;
+    -webkit-box-shadow: 3px 7px 14px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 3px 7px 14px -1px rgba(0,0,0,0.75);
+    box-shadow: 3px 7px 14px -1px rgba(0,0,0,0.75);
+}
+
+.book:nth-child(odd) {
+    background-color: rgb(221, 217, 217);
 }

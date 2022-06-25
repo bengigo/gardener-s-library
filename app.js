@@ -12,7 +12,7 @@ class Book {
     gardenBooks.forEach((book) => {
       bookList.innerHTML += `
             <div class="book">
-                  <p>"${book.title}" by "${book.author}"</p>
+                  <p class="book-info">"${book.title}" by "${book.author}"</p>
                   <button id="${book.id}" class="delete">Delete</button>
             </div>
             `;
