@@ -8,15 +8,23 @@
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
 <body>
     <header>
+        <div id="logo">Gardener's Library</div>
+
+
         <nav>
-            <div id="logo">Gardener's Library</div>
+            <div id="add-msg">Added <span class="material-symbols-outlined">
+                    arrow_forward
+                </span></div>
 
             <ul id="nav-list">
-                <li class="bordered nav-item">List</li>
-                <li class="bordered nav-item">Add Book</li>
-                <li class="nav-item">Contact</li>
+                <li class="bordered nav-item"><a class="nav-link" id="list-link" href="#">List</a></li>
+                <li class="bordered nav-item"><a class="nav-link" id="add-link" href="">Add Book</a></li>
+                <li class="nav-item"><a class="nav-link" id="contact-link" href="#">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -32,25 +40,28 @@
     </section>
 
     <!-- adding -->
-    <section class="hide">
+    <section id="book-adding" class="hide">
         <h1>Add a new book</h1>
-        <input id="title-input" type="text" placeholder="Title">
-        <input id="author-input" type="text" placeholder="Author">
-        <div>
+        <form>
+            <input id="title-input" type="text" placeholder="Title">
+            <input id="author-input" type="text" placeholder="Author">
+        <div id="add-alert">
             <p id="alert"></p>
             <button id="add-button">Add</button>
         </div>
+    </form>
+
     </section>
 
     <!-- contact -->
-    <section class="hide">
+    <section id="contact" class="hide">
         <h2>Contact Information</h2>
         <p>Do you have any questions, suggestions or you just want to say "Hi"? <br>You can reach out to us!
         </p>
         <ul id="contact-list">
-            <li>Our email gardenerslibrary@mail.com</li>
-            <li>Our phone number 012345678901</li>
-            <li>Our address: Who Knows Where 22, 84503 City/Country</li>
+            <li class="contact-item">Our email gardenerslibrary@mail.com</li>
+            <li class="contact-item">Our phone number 012345678901</li>
+            <li class="contact-item">Our address: Who Knows Where 22, 84503 City/Country</li>
         </ul>
     </section>
 

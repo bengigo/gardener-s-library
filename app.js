@@ -1,3 +1,6 @@
+const addMessage = document.querySelector('#add-msg');
+addMessage.style.display = 'none';
+
 class Book {
   constructor(title, author) {
     this.title = title;
@@ -53,17 +56,59 @@ Book.store();
 
 addButton.addEventListener('click', (e) => {
   e.preventDefault();
+  const errorMessage = document.querySelector('#alert');
+
   if (title.value === '' || author.value === '') {
     e.preventDefault();
-    const errorMessage = document.querySelector('#alert');
     errorMessage.textContent = 'Please fill every filed.';
   } else {
     e.preventDefault();
     Book.store();
     title.value = '';
     author.value = '';
-    window.location.reload();
+    errorMessage.textContent = '';
   }
+  addMessage.style.display = 'flex';
+});
+
+const linkToList = document.querySelector('#list-link');
+const linkToAdd = document.querySelector('#add-link');
+const linkToContact = document.querySelector('#contact-link');
+
+linkToList.addEventListener('click', () => {
+  const listPage = document.querySelector('#book-list');
+  const addPage = document.querySelector('#book-adding');
+  const contactPage = document.querySelector('#contact');
+
+  listPage.style.display = 'flex';
+  addPage.style.display = 'none';
+  contactPage.style.display = 'none';
+
+  addMessage.style.display = 'none';
+});
+
+linkToAdd.addEventListener('click', (e) => {
+  const listPage = document.querySelector('#book-list');
+  const addPage = document.querySelector('#book-adding');
+  const contactPage = document.querySelector('#contact');
+
+  e.preventDefault();
+
+  listPage.style.display = 'none';
+  addPage.style.display = 'flex';
+  contactPage.style.display = 'none';
+});
+
+linkToContact.addEventListener('click', () => {
+  const listPage = document.querySelector('#book-list');
+  const addPage = document.querySelector('#book-adding');
+  const contactPage = document.querySelector('#contact');
+
+  listPage.style.display = 'none';
+  addPage.style.display = 'none';
+  contactPage.style.display = 'flex';
+
+  addMessage.style.display = 'none';
 });
 
 const timeDisplay = document.querySelector('#time-slot');

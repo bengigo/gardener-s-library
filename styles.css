@@ -19,12 +19,27 @@ header {
   border: 3px solid #395d44;
   padding: 15px 5px 15px 20px;
   margin: 8px;
+  display: flex;
+  align-items: flex-end;
+}
+
+#logo {
+  width: 100%;
 }
 
 nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   width: 100%;
+}
+
+#add-msg {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 10px;
+  width: 90px;
+  color: #9fe2bf;
 }
 
 #nav-list {
@@ -40,6 +55,11 @@ nav {
   padding: 0 5px;
 }
 
+.nav-link {
+  text-decoration: none;
+  color: black;
+}
+
 #time-slot {
   float: right;
   margin-right: 8px;
@@ -49,6 +69,7 @@ nav {
   margin: 80px 8px 62px 8px;
   height: 60vh;
   overflow: scroll;
+  flex-direction: column;
 }
 
 h1 {
@@ -75,6 +96,49 @@ h1 {
 .book:nth-child(odd) {
   /* background-color: rgb(221, 217, 217); */
   background-color: #9fe2bf;
+}
+
+#book-adding {
+  flex-direction: column;
+  align-items: center;
+  height: 50vh;
+  margin: 150px 8px 62px 8px;
+}
+
+form {
+  width: 200px;
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+input {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+#add-alert {
+  display: flex;
+}
+
+#add-button {
+  /* padding: 5px 10px;
+  height: 32px; */
+  width: 45px;
+  background-color: #fff;
+  border: 2px solid black;
+  -webkit-box-shadow: 3px 7px 14px -1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 3px 7px 14px -1px rgba(0, 0, 0, 0.75);
+  box-shadow: 3px 7px 14px -1px rgba(0, 0, 0, 0.75);
+}
+
+#contact {
+  flex-direction: column;
+  align-items: center;
+  height: 50vh;
+  margin: 150px 8px 62px 8px;
 }
 
 footer {
