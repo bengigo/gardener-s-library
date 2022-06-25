@@ -67,7 +67,6 @@ addButton.addEventListener('click', (e) => {
     title.value = '';
     author.value = '';
     errorMessage.textContent = '';
-
   }
   addMessage.style.display = 'flex';
 });
@@ -86,7 +85,6 @@ linkToList.addEventListener('click', () => {
   contactPage.style.display = 'none';
 
   addMessage.style.display = 'none';
-
 });
 
 linkToAdd.addEventListener('click', (e) => {
@@ -111,7 +109,6 @@ linkToContact.addEventListener('click', () => {
   contactPage.style.display = 'flex';
 
   addMessage.style.display = 'none';
-
 });
 
 const timeDisplay = document.querySelector('#time-slot');
