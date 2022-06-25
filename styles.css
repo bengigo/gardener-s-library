@@ -56,6 +56,11 @@ nav {
   padding: 0 5px;
 }
 
+.nav-link {
+  text-decoration: none;
+  color: black;
+}
+
 #time-slot {
   float: right;
   margin-right: 8px;
