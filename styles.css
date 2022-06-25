@@ -98,6 +98,31 @@ h1 {
   background-color: #9fe2bf;
 }
 
+#book-adding {
+  flex-direction: column;
+  align-items: center;
+  height: 50vh;
+  margin: 150px 8px 62px 8px;
+}
+
+form {
+  width: 200px;
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+input {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+#add-alert {
+  display: flex;
+}
+
 footer {
   border: 3px solid #395d44;
   padding: 15px 5px 15px 20px;

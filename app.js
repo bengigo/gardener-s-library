@@ -56,15 +56,18 @@ Book.store();
 
 addButton.addEventListener('click', (e) => {
   e.preventDefault();
+  const errorMessage = document.querySelector('#alert');
+
   if (title.value === '' || author.value === '') {
     e.preventDefault();
-    const errorMessage = document.querySelector('#alert');
     errorMessage.textContent = 'Please fill every filed.';
   } else {
     e.preventDefault();
     Book.store();
     title.value = '';
     author.value = '';
+    errorMessage.textContent = '';
+
   }
   addMessage.style.display = 'flex';
 });
@@ -81,6 +84,9 @@ linkToList.addEventListener('click', () => {
   listPage.style.display = 'flex';
   addPage.style.display = 'none';
   contactPage.style.display = 'none';
+
+  addMessage.style.display = 'none';
+
 });
 
 linkToAdd.addEventListener('click', (e) => {
@@ -103,6 +109,9 @@ linkToContact.addEventListener('click', () => {
   listPage.style.display = 'none';
   addPage.style.display = 'none';
   contactPage.style.display = 'flex';
+
+  addMessage.style.display = 'none';
+
 });
 
 const timeDisplay = document.querySelector('#time-slot');
