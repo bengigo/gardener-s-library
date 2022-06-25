@@ -72,3 +72,7 @@ function displayTime() {
 }
 
 setInterval(displayTime, 1000);
+
+const linkToList = document.querySelector('#list-link');
+const linkToAdd = document.querySelector('#add-link');
+const linkToContact = document.querySelector('#contact-link');
