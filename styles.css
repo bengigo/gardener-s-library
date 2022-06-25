@@ -1,0 +1,84 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito", sans-serif;
+}
+
+body {
+  background-color: #c5b2a5;
+}
+
+.hide {
+  display: none;
+}
+
+header {
+  border: 3px solid #395d44;
+  padding: 15px 5px 15px 20px;
+  margin: 8px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+#nav-list {
+  display: flex;
+  list-style-type: none;
+}
+
+.bordered {
+  border-right: 2px solid #395d44;
+}
+
+.nav-item {
+  padding: 0 5px;
+}
+
+#time-slot {
+  float: right;
+  margin-right: 8px;
+}
+
+#book-list {
+  margin: 80px 8px 62px 8px;
+  height: 60vh;
+  overflow: scroll;
+}
+
+h1 {
+  text-align: center;
+}
+
+.book {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 0;
+}
+
+.delete {
+  padding: 5px 10px;
+  height: 32px;
+  background-color: #fff;
+  border: 2px solid #395d44;
+  -webkit-box-shadow: 3px 7px 14px -1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 3px 7px 14px -1px rgba(0, 0, 0, 0.75);
+  box-shadow: 3px 7px 14px -1px rgba(0, 0, 0, 0.75);
+}
+
+.book:nth-child(odd) {
+  /* background-color: rgb(221, 217, 217); */
+  background-color: #9fe2bf;
+}
+
+footer {
+  border: 3px solid #395d44;
+  padding: 15px 5px 15px 20px;
+  margin: 8px;
+}

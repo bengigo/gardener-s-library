@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap" rel="stylesheet">
+<body>
+    <header>
+        <nav>
+            <div id="logo">Gardener's Library</div>
+
+            <ul id="nav-list">
+                <li class="bordered nav-item">List</li>
+                <li class="bordered nav-item">Add Book</li>
+                <li class="nav-item">Contact</li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- time slot -->
+    <p id="time-slot"></p>
+
+
+    <!-- list -->
+    <section id="book-list">
+        <h1>Gardener's Books</h1>
+    </section>
+
+    <!-- adding -->
+    <section class="hide">
+        <h1>Add a new book</h1>
+        <input id="title-input" type="text" placeholder="Title">
+        <input id="author-input" type="text" placeholder="Author">
+        <div>
+            <p id="alert"></p>
+            <button id="add-button">Add</button>
+        </div>
+    </section>
+
+    <!-- contact -->
+    <section class="hide">
+        <h2>Contact Information</h2>
+        <p>Do you have any questions, suggestions or you just want to say "Hi"? <br>You can reach out to us!
+        </p>
+        <ul id="contact-list">
+            <li>Our email gardenerslibrary@mail.com</li>
+            <li>Our phone number 012345678901</li>
+            <li>Our address: Who Knows Where 22, 84503 City/Country</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>Copyright...</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
