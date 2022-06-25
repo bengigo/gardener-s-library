@@ -67,7 +67,7 @@ addButton.addEventListener('click', (e) => {
 });
 
 const timeDisplay = document.querySelector('#time-slot');
- function displayTime() {
+function displayTime() {
   timeDisplay.textContent = new Date();
 }
 
