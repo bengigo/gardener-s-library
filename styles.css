@@ -34,3 +34,8 @@ nav {
 .nav-item {
     padding: 0 5px;
 }
+
+#time-slot {
+    float: right;
+    margin-right: 8px;
+}
