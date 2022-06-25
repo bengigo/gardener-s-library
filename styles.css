@@ -19,13 +19,29 @@ header {
   border: 3px solid #395d44;
   padding: 15px 5px 15px 20px;
   margin: 8px;
+  display: flex;
+  align-items: flex-end;
+}
+
+#logo {
+  width: 100%;
 }
 
 nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   width: 100%;
 }
+
+#add-msg {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 10px;
+  width: 90px;
+  color: #9fe2bf;
+}
+
 
 #nav-list {
   display: flex;
@@ -82,3 +98,4 @@ footer {
   padding: 15px 5px 15px 20px;
   margin: 8px;
 }
+
