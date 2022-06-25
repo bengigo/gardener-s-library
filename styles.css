@@ -7,6 +7,10 @@
   font-family: "Nunito", sans-serif;
 }
 
+body {
+    background-color: #c5b2a5;
+}
+
 .hide {
   display: none;
 }
