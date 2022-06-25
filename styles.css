@@ -5,3 +5,32 @@
     font-family: "Nunito", sans-serif;
 }
 
+.hide {
+    display: none;
+}
+
+header {
+    border: 3px solid black;
+    padding: 15px 5px 15px 20px;
+    margin: 8px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+}
+
+#nav-list {
+    display: flex;
+    list-style-type: none;
+}
+
+.bordered {
+    border-right: 2px solid black;
+
+}
+.nav-item {
+    padding: 0 5px;
+}
